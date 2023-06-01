@@ -1,0 +1,10 @@
+.DS_Store
+*.pyc
+*.egg
+*.egg-info
+.vscode/settings.json
+uwsgi.*
+
+tulong_api/temp/*
+!tulong_api/temp/.gitkeep
+tests/images

@@ -1,0 +1,20 @@
+@import './reset';
+@import './mixin';
+.row {
+    display: flex;
+    align-items: center;
+}
+.title-wrap {
+    padding: 12px;
+    border-bottom: solid 1px #ddd;
+    color: #666;
+    font-size: 16px;
+}
+.subtitle-wrap {
+    padding: 12px;
+    color: #999;
+    font-size: 14px;
+}
+.none {
+    display: none;
+}

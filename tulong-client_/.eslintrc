@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb-base",
+    "plugin:prettier/recommended",
+    "plugin:vue/recommended"
+  ],
+  "plugins": [
+    "prettier",
+    "eslint-plugin-import",
+    "eslint-plugin-eslint-comments"
+  ],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "vue/max-attributes-per-line": "off"
+  }
+}
