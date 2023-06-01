@@ -16,7 +16,7 @@ class DevelopmentConfig(BaseConfig):
 
 class ProductionConfig(BaseConfig):
     ENV = "production"
-    DOMAIN = "http://9.134.32.192:8081"
+    DOMAIN = "http://54.202.62.34:5000"
     JWT_SECRET = "tulong666"
     RESULT_URL = DOMAIN + "/temp"
 
