@@ -60,3 +60,8 @@ class ImageParser(Resource):
             styles = detect_UI_styles(task_id, out_rect_data['id'])
             styles_data.append(styles)
         return msgResponse({"styles_data": styles_data}), 201, {"Set-Cookie": "token=" + token}
+
+
+class Hello(Resource):
+    def post(self):
+        return msgResponse({"data": "hello"})

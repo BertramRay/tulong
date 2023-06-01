@@ -3,7 +3,7 @@ from flask import Flask
 # from flask_cors import CORS
 from flask_restful import Api
 from config import config
-from resources.parser import ImageParser
+from resources.parser import ImageParser, Hello
 from resources.uploader import ImageUploader
 from resources.processor import ImageExtractor, ImageStyleDetector
 
@@ -19,12 +19,9 @@ api.add_resource(ImageUploader, '/api/upload')
 api.add_resource(ImageExtractor, '/api/extract')
 api.add_resource(ImageStyleDetector, '/api/detect')
 api.add_resource(ImageParser, '/api/parse')
-
-
-@app.route('/')
-def hello():
-    return "<h1>" + "Hello World!" + "</h1>"
+api.add_resource(Hello, '/api/hello')
 
 
 if __name__ == "__main__":
+    print("hello")
     app.run()
