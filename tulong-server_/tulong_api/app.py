@@ -3,6 +3,7 @@ from flask import Flask
 # from flask_cors import CORS
 from flask_restful import Api
 from config import config
+from resources.parser import ImageParser
 from resources.uploader import ImageUploader
 from resources.processor import ImageExtractor, ImageStyleDetector
 
@@ -17,6 +18,7 @@ api = Api(app)
 api.add_resource(ImageUploader, '/api/upload')
 api.add_resource(ImageExtractor, '/api/extract')
 api.add_resource(ImageStyleDetector, '/api/detect')
+api.add_resource(ImageParser, '/api/parse')
 
 if __name__ == "__main__":
     app.run()
