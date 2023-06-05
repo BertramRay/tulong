@@ -8,7 +8,7 @@ from resources.uploader import ImageUploader
 from resources.processor import ImageExtractor, ImageStyleDetector
 
 app = Flask(__name__, static_folder='temp', )
-Config = config["development"]
+Config = config["production"]
 app.config.from_object(Config)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 # CORS(app,origins="*")
