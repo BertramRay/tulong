@@ -3,6 +3,6 @@ module.exports = {
     api: 'http://tulong.com/api',
   },
   production: {
-    api: 'http://tulong.com/api',
+    api: 'http://54.202.62.34:5000/api',
   },
 };
