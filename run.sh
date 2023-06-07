@@ -1,6 +1,8 @@
+#!/bin/bash
 # tulong-server
 source tulong/bin/activate
-python3 tulong-server_/tulong_api/app.py
+cd tulong-server_/tulong_api
+gunicorn app:app -b 0.0.0.0:5000 --daemon
 # tulong-client
 cd tulong-client_
 npm run dev
